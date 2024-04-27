@@ -43,7 +43,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
 
   max-width: 1920px;
   padding: 75px 75px 0 75px;
@@ -128,4 +127,74 @@ body {
 
 .checkbox__input:checked + span::before{
   opacity: 1;
+}
+
+/* Select */
+
+.choices__inner{
+  min-width: 176px;
+  min-height: auto;
+  padding: 9px 0 11px 15px;
+
+  font-size: 14px;
+
+  border: none;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+
+.choices[data-type*=select-one] .choices__inner{
+  padding-bottom: 11px;
+}
+
+.choices__placeholder{
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #333;
+  opacity: 1;
+}
+
+.choices__list--single{
+  padding: 0;
+  width: auto;
+}
+
+.choices__list--dropdown .choices__placeholder {
+  display: none;
+  }
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted::after, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted::after{
+  display: none;
+}
+
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item{
+  padding: 10px;
+}
+
+.choices[data-type*=select-one]::after{
+  top: 12px;
+  right: 14.69px;
+
+  width: 8px;
+  height: 8px;
+  margin-top: 0;
+
+  border: none;
+  border-bottom: 1px solid #666;
+  border-right: 1px solid #666;
+  transform: rotate(45deg);
+}
+
+.is-open{
+  background-color: #FFF;
+  border-radius: 10px 10px 0 0;
+}
+
+.is-open .choices__inner,
+.is-focused .choices__inner{
+  padding: 8px 0 10px 14px;
+
+  border: 1px solid #CCB26E;
+  border-radius: 10px;
 }

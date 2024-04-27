@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Кастомные интерактивные элементы</title>
 </head>
@@ -63,7 +64,22 @@
           </li>
         </ul>
       </article>
+
+      <article class="select">
+        <select class="select__js" name="Test">
+          <option value="" selected>Материал</option>
+          <option class="select__item" value="Древесина">Древесина</option>
+          <option class="select__item" value="Металл">Металл</option>
+          <option class="select__item" value="Камень">Камень</option>
+          <option class="select__item" value="Пластик">Пластик</option>
+          <option class="select__item" value="Композитный">Композитный</option>
+          <option class="select__item" value="Гипс">Гипс</option>
+        </select>
+      </article>
     </div>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="js/choices.js"></script>
 </body>
 </html>
