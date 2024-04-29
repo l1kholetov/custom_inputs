@@ -53,6 +53,7 @@ body {
 .checkbox{
   display: inline-block;
   padding: 21px 29px 29px 30px;
+  max-height: 309px;
 
   background-color: #FFF;
   border-radius: 10px;
@@ -130,6 +131,10 @@ body {
 }
 
 /* Select */
+
+.select{
+  max-height: 293px;
+}
 
 .choices__inner{
   min-width: 176px;
@@ -213,7 +218,7 @@ body {
 .choices__list--dropdown, .choices__list[aria-expanded]{
   margin-top: -10px;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 
   border: none;
   border-left: 1px solid #CCB26E;
@@ -235,4 +240,17 @@ body {
   transform: rotate(-135deg);
 
   z-index: 11;
+}
+
+/* Map */
+
+.map{
+  width: 460px;
+  height: 460px;
+
+  border: 1px solid #CCB26E;
+}
+
+[class*="ground-pane"]{
+  filter: grayscale(1);
 }

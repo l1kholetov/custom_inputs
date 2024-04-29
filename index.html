@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
   <title>Кастомные интерактивные элементы</title>
 </head>
 <body>
@@ -76,10 +77,13 @@
           <option class="select__item" value="Гипс">Гипс</option>
         </select>
       </article>
+
+      <article class="map" id="map"></article>
     </div>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="js/choices.js"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>
