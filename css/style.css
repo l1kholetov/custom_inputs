@@ -42,10 +42,14 @@ body {
 .container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 
   max-width: 1920px;
-  padding: 75px 75px 0 75px;
+  padding: 75px 150px 0 150px;
+}
+
+article:not(:last-child){
+  margin-right: 58px;
 }
 
 /* Checkbox */
@@ -248,9 +252,47 @@ body {
   width: 460px;
   height: 460px;
 
+  background-color: #f2f2f2;
   border: 1px solid #CCB26E;
 }
 
 [class*="ground-pane"]{
   filter: grayscale(1);
+}
+
+/* CustomScroll */
+
+.customScroll{
+  width: 399px;
+  height: 310px;
+  padding: 20px 30px 20px 29px;
+
+  background-color: #FFF;
+}
+
+.customScroll__content{
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #333;
+}
+
+.simplebar-track.simplebar-vertical{
+  width: 18px;
+}
+
+.simplebar-scrollbar.simplebar-visible:before{
+  opacity: 1;
+}
+
+.simplebar-scrollbar::before {
+  top: 7px;
+  bottom: 7px;
+  right: 6px;
+  left: 6px;
+
+  background-color: #CCB26E;
+  border-radius: 5px;
 }
