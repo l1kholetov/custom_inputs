@@ -18,7 +18,7 @@ img{
 }
 
 html{
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .visually-hidden {
@@ -295,4 +295,97 @@ article:not(:last-child){
 
   background-color: #CCB26E;
   border-radius: 5px;
+}
+
+/* Form */
+
+.form__wrapper{
+  margin-top: 75px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 38px 30px 39px 30px;
+
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.form__input{
+  margin-bottom: 31px;
+  padding: 20.5px 20px;
+  width: 340px;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+
+  border: none;
+  border-radius: 10px;
+}
+
+.form__input:focus{
+  outline: 1px solid #FF5C00;
+  outline-offset: -1px;
+}
+
+.form__input::placeholder{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #999;
+}
+
+.form__btn{
+  padding: 18.5px 53px;
+  max-width: 192px;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #FFF;
+
+  background-color: #FF5C00;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: background-color .2s linear, transform .05s linear;
+}
+
+.form__btn:hover{
+  background-color: #FF7A00;
+}
+
+.form__btn:focus{
+  outline: none;
+
+  background-color: #FF7A00;
+}
+
+.form__btn:active{
+  background-color: #AA3D00;
+
+  transform: scale(1.01);
+}
+
+.form__input__wrapper{
+  position: relative;
+}
+
+.just-validate-error-label{
+  position: absolute;
+  top: -18px;
+  left: 20px;
+
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #FF5C00;
 }

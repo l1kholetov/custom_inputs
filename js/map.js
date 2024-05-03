@@ -3,11 +3,11 @@
       ymaps.ready(function () {
 
         var myMap = new ymaps.Map("map", {
-          center: [60.072869, 30.321278],
-          zoom: 14
+          center: [59.939032, 30.315827],
+          zoom: 13
         });
       // Создание геообъекта с типом точка (метка).
-        var myPlacemark = new ymaps.Placemark([60.072869, 30.321278], {}, {
+        var myPlacemark = new ymaps.Placemark([59.939032, 30.315827], {}, {
           iconLayout: 'default#image',
           iconImageHref: '/img/svg/map.svg',
           iconImageSize: [48, 48],
