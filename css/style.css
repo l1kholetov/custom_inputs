@@ -45,7 +45,7 @@ body {
   /* justify-content: space-around; */
 
   max-width: 1920px;
-  padding: 75px 150px 0 150px;
+  padding: 75px 150px 75px 150px;
 }
 
 article:not(:last-child){
@@ -388,4 +388,87 @@ article:not(:last-child){
   font-weight: 400;
   font-family: 'Roboto', Arial, sans-serif;
   color: #FF5C00;
+}
+
+/* Tooltip */
+
+.tooltip__wrapper{
+  position: relative;
+
+  max-width: 375px;
+  max-height: 160px;
+  margin-top: 75px;
+  padding: 20px 78px 20px 29px;
+
+  background-color: #FFF;
+}
+
+.tooltip__context{
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #333;
+}
+
+.tooltip__container{
+  position: absolute;
+  bottom: 25px;
+  right: 103px;
+
+  width: 16px;
+  height: 16px;
+
+  cursor: pointer;
+}
+
+.tooltip__container svg path{
+  transition: fill .2s ease-in-out;
+}
+
+.tooltip__content{
+  position: absolute;
+  right: 29px;
+  bottom: 52px;
+
+  max-width: 163px;
+  padding: 7px 15px 8px 15px;
+
+  background-color: #666;
+  opacity: 0;
+
+  transition: opacity .2s ease-in-out;
+}
+
+.tooltip__content::after{
+  content: '';
+
+  position: absolute;
+  top: calc(100% - 6px);
+  left: calc(50% - 7.5px);
+
+  width: 0;
+  height: 0;
+
+  border: 7.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  border-top: 12.5px solid #666;
+}
+
+.tooltip__content p{
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.tooltip__container:hover svg path{
+  fill: #CCB26E;
+}
+
+.tooltip__container:hover + .tooltip__content{
+  opacity: 1;
 }
