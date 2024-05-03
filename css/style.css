@@ -90,7 +90,12 @@ article:not(:last-child){
 }
 
 .checkbox__input{
-  display: none;
+  /* display: none; */
+
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .checkbox__input + span{
@@ -107,6 +112,10 @@ article:not(:last-child){
   border-radius: 3px;
 
   transition: border .2s ease-in-out;
+}
+
+.checkbox__input:focus + span{
+  border: 1px solid #CCB26E;
 }
 
 .checkbox__input + span::before{
